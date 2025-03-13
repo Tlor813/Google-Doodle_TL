@@ -1,6 +1,6 @@
-# My Topic Google Doodle
+# Valentine's Google Doodle
 
-50+ words about your Google Doodle.
+A Valentines Goodle Doodle. Includes a lonely panda writing letters to her crush and falls asleep and daydreams about receiving valentine's gifts.
 
 ## Collage
 
