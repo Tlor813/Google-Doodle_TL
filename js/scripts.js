@@ -32,6 +32,28 @@ gsap.to('#Body', {
     
   })
 
+  
+    
+  
+  gsap.to('#Pen', {
+  
+    rotation: -10, transformOrigin:"top" ,
+    repeat: -1,
+    duration: 3,
+    yoyo: true,
+    
+    
+  })
+
+
+
+
+
+
+
+
+
+
   document.getElementById("r1").addEventListener("click", function() {
     this.style.visibility = "hidden";
 });
@@ -116,6 +138,16 @@ document.getElementById("r20").addEventListener("click", function() {
   this.style.visibility = "hidden";
 });
 
+
+document.getElementById("r21").addEventListener("click", function() {
+  this.style.visibility = "hidden";
+});
+
+
+
+
+
+
 document.getElementById("leaf").addEventListener("click", function() {
   this.style.visibility = "hidden";
 });
@@ -141,3 +173,16 @@ document.getElementById("leafr5").addEventListener("click", function() {
 });
 
 
+document.getElementById("pop").addEventListener("click", function() {
+  let tl = gsap.timeline();
+
+  // Inflate the balloon before popping
+  tl.to("#pop", { scale: 1.2, duration: 0.2, ease: "elastic.out(1, 0.3)" })
+    .to("#pop", { scale: 0, duration: 0.1, ease: "power2.inOut" }) // Instant pop effect
+    .to("#particles", { opacity: 1, scale: 1.5, duration: 0.3, ease: "power2.out" }, "-=0.1") // Show particles
+    .to("#particles", { opacity: 0, duration: 0.5 }); // Fade out particles
+
+  // Optional: Play a pop sound
+  let popSound = new Audio('https://www.fesliyanstudios.com/play-mp3/403');
+  popSound.play();
+});

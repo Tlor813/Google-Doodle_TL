@@ -1,9 +1,4 @@
-/* My Awesome Styles */
 
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
 
 
 /* Doodle Stage */
@@ -13,18 +8,9 @@
   width: 600px;
 }
 
-.C:active{
-
-  opacity: 0;
-
-}
 
 
 
-#paper:active {
- 
-}
 
-#r1:target {
-  display: none;
-}
+
+
