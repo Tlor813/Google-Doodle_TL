@@ -33,7 +33,52 @@ gsap.to('#Body', {
   })
 
   
+  gsap.to('#leafr2', {
+  
+    rotation: -15, transformOrigin:"bottom" ,
+    repeat: -1,
+    duration: 1.5,
+    yoyo: true,
     
+    
+  })
+
+  gsap.to('#leafr', {
+  
+    rotation: -15, transformOrigin:"bottom" ,
+    repeat: -1,
+    duration: 1.5,
+    yoyo: true,
+    
+    
+  })
+
+
+  gsap.to('#leafr5', {
+  
+    rotation: -15, transformOrigin:"bottom" ,
+    repeat: -1,
+    duration: 1.5,
+    yoyo: true,
+    
+    
+  })
+
+  gsap.to('#leafr3', {
+  
+    rotation: -15, transformOrigin:"bottom" ,
+    repeat: -1,
+    duration: 1.5,
+    yoyo: true,
+    
+    
+  })
+
+
+
+
+
+
   
   gsap.to('#Pen', {
   
@@ -173,12 +218,12 @@ document.getElementById("leafr5").addEventListener("click", function() {
 });
 
 
-document.getElementById("pop").addEventListener("click", function() {
+document.getElementById("gift").addEventListener("click", function() {
   let tl = gsap.timeline();
 
   // Inflate the balloon before popping
-  tl.to("#pop", { scale: 1.2, duration: 0.2, ease: "elastic.out(1, 0.3)" })
-    .to("#pop", { scale: 0, duration: 0.1, ease: "power2.inOut" }) // Instant pop effect
+  tl.to("#gift", { scale: 1.2, duration: 0.2, ease: "elastic.out(1, 0.3)" })
+    .to("#gift", { scale: 0, duration: 0.1, ease: "power2.inOut" }) // Instant pop effect
     .to("#particles", { opacity: 1, scale: 1.5, duration: 0.3, ease: "power2.out" }, "-=0.1") // Show particles
     .to("#particles", { opacity: 0, duration: 0.5 }); // Fade out particles
 
